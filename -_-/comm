@@ -1,0 +1,22 @@
+#!/bin/sh
+FILE_EXTENSION=$(echo "$1" | grep -oE "\.[A-z]+")
+case $FILE_EXTENSION in
+    .js | .c)
+        COMMENT_TAG="//"
+        ;;
+    .py)
+        COMMENT_TAG="#"
+        ;;
+    *)
+        echo "Extension is not supported"
+        exit 2
+esac
+FIRST_LINE=$(head -n 1 "$1")
+CAPTURED_COMMENT=$(echo "$FIRST_LINE" | grep -o "$COMMENT_TAG.*")
+if [ -n "$CAPTURED_COMMENT" ]; then
+    echo "Comment found: $CAPTURED_COMMENT"
+    exit 0
+else
+    echo "Comment NOT found"
+    exit 1
+fi

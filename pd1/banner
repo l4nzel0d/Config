@@ -1,0 +1,21 @@
+#!/bin/sh
+textline="$@"
+width=${#textline}
+
+# First line
+printf '+'
+for i in $(seq 1 $((width + 2))); do
+    printf '-'
+done
+printf '+\n'
+
+# Second line
+printf "| $textline |\n"
+
+# Third line
+printf '+'
+for i in $(seq 1 $((width + 2))); do
+    printf '-'
+done
+printf '+\n'
+exit 0

@@ -1,0 +1,8 @@
+#!/bin/sh
+MATCHES=$(ls -l "$1" | grep '\.txt' | awk '$5 == 0 {print $9}')
+if [ -n "$MATCHES" ]; then  
+    echo "$MATCHES"
+    exit 0
+fi
+echo "No empty text files were found"
+exit 1

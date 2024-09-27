@@ -1,0 +1,13 @@
+#!/bin/sh
+find "$1" -type f -exec md5sum {} + | \
+    sort | \
+    awk '{print $2}' > duplicate_files.txt
+
+if [ -s duplicate_files.txt ]; then
+    echo "Duplicate files found:"
+    cat duplicate_files.txt
+else
+    echo "No duplicate files found"
+fi
+
+rm duplicate_files.txt
