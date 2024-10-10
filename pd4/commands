@@ -1,0 +1,17 @@
+cd /d/Boris/Documents/UNI/Config/pd4
+
+0. (cmd)
+"D:\Program Files\Graphviz\bin\dot.exe" -Tpng D:\Boris\Documents\UNI\Config\pd4\civgraph.txt -o D:\Boris\Documents\UNI\Config\pd4\civgraph.png
+
+1. (MINGW64)
+cd /d/Boris/Documents/UNI/Config/pd4/task1
+make mathematics
+
+
+2. (VS Code)
+cd D:\Boris\Documents\UNI\Config\pd4\task2
+python task2.py
+
+2. (MINGW64)
+cd /d/Boris/Documents/UNI/Config/pd4/task2
+

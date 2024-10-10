@@ -1,0 +1,9 @@
+0.
+cd D:/Boris/Documents/UNI/Config/pd3
+
+
+1. MINGW64
+jsonnet task1.jsonnet -o task1.json
+
+2. Bash VS
+dhall-to-json < task2.dhall > task2_output.json 
