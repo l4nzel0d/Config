@@ -8,10 +8,10 @@ cd /d/Boris/Documents/UNI/Config/pd4/task1
 make mathematics
 
 
-2. (VS Code)
-cd D:\Boris\Documents\UNI\Config\pd4\task2
+2-3. (VS Code)
+cd D:\Boris\Documents\UNI\Config\pd4\task23
 python task2.py
 
-2. (MINGW64)
-cd /d/Boris/Documents/UNI/Config/pd4/task2
+2-3. (MINGW64)
+cd /d/Boris/Documents/UNI/Config/pd4/task23
 
