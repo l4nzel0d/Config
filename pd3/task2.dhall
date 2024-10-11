@@ -11,17 +11,6 @@ let students : List Student =
 
 let subject : Text = "Конфигурационное управление"
 
-
-
-
-
-
-
-
-
-
-
-
 let groups : List Group = 
   [ "ИКБО-1-20"
   , "ИКБО-2-20"
